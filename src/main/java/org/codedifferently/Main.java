@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("print");
+
         CalculateTax calculateTax = new CalculateTax();
         Scanner scanner = new Scanner(System.in);
 
@@ -18,6 +18,7 @@ public class Main {
         System.out.println("What is your Budget?");
         double budget = scanner.nextDouble();
 
+        System.out.println("----WELCOME TO THE DEV GROUP'S MYSTERY SHACK----");
 
 
         calculateTax.receiptCode(customerName, calculateTax.randomIdCode());
