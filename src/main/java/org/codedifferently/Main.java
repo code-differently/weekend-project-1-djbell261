@@ -9,7 +9,7 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
 
-        CalculateTax calculateTax = new CalculateTax();
+        RecieptGenerator calculateTax = new RecieptGenerator();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("What is your Name?");
@@ -23,19 +23,10 @@ public class Main {
 
         calculateTax.receiptCode(customerName, calculateTax.randomIdCode());
         double total = calculateTax.itemTax(calculateTax.itemPrices());
-        calculateTax.canThisNiggaAffordIt(total,budget);
+        calculateTax.canYouAffordIt(total, budget);
 
+        scanner.close();
 
-
-
-
-
-
-
-
-
-
-
-        }
     }
+}
 

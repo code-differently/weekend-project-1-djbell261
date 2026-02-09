@@ -2,7 +2,7 @@ package org.codedifferently;
 
 import java.util.Random;
 
-public class CalculateTax {
+public class RecieptGenerator {
 
 
     public int randomIdCode(){
@@ -58,7 +58,7 @@ public class CalculateTax {
     }
 
 
-    public void canThisNiggaAffordIt(double total, double budget){
+    public void canYouAffordIt(double total, double budget){
 
 
         double finalTotal = total - budget;
