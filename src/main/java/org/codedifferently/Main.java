@@ -21,6 +21,7 @@ public class Main {
         System.out.println("----WELCOME TO THE DEV GROUP'S MYSTERY SHACK----");
 
 
+
         calculateTax.receiptCode(customerName, calculateTax.randomIdCode());
         double total = calculateTax.itemTax(calculateTax.itemPrices());
         calculateTax.canYouAffordIt(total, budget);

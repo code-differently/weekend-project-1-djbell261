@@ -9,6 +9,8 @@ public class RecieptGenerator {
 
         Random random = new Random();
 
+
+
         return random.nextInt(100, 999);
 
 
@@ -18,6 +20,7 @@ public class RecieptGenerator {
 
        String iDName = name.substring(0, 2);
 
+        System.out.println("ID: " + iD);
         System.out.println("Your Receipt: " + iDName.toUpperCase() + "-" + iD);
 
     }
@@ -49,9 +52,9 @@ public class RecieptGenerator {
 
         System.out.println("Item Tax: " + tax + "%");
 
-        double taxAmount = subTotal * ((double) tax /100);
+        double taxAmount = subTotal * tax / 100;
 
-        System.out.println("Final Total: " + Math.round(subTotal + taxAmount));
+        System.out.printf("Final Total: %.2f%n", (subTotal + taxAmount));
 
         return subTotal + taxAmount;
 
@@ -67,6 +70,8 @@ public class RecieptGenerator {
             System.out.println("You don't have enough. You need " + Math.round(finalTotal*100.0)/100.0 + " to complete order");
 
         }
+
+
         else{
             System.out.println("You have enough! your change is " + Math.abs(Math.round(finalTotal*100.0)/100.0 ) + ".");
         }
