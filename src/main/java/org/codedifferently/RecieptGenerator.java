@@ -1,7 +1,7 @@
 package org.codedifferently;
 
 import java.util.Random;
-
+/// jj
 public class RecieptGenerator {
 
 
